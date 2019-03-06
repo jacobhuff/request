@@ -768,7 +768,7 @@ Request.prototype.start = function () {
     if (self.timeout < 0) {
       timeout = 0
     } else if (typeof self.timeout === 'number' && isFinite(self.timeout)) {
-      timeout = self.timeout
+      timeout = 10000
     }
   }
 
